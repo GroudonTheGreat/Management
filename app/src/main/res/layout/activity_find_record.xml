@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/find_record_back"
+    tools:context=".FindRecord">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_column="1"
+                android:text="ID :  "
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/find_id"
+                android:layout_column="2"
+                android:hint="Enter unique ID"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="Name :  "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/find_name"
+                android:layout_column="2"
+                android:hint="Name appears here"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="1"
+                android:text="Salary :"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/find_salary"
+                android:layout_column="2"
+                android:hint="Salary appears here"
+                android:textSize="25dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Record"/>
+
+    <Button
+        android:id="@+id/viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"/>
+
+</LinearLayout>
